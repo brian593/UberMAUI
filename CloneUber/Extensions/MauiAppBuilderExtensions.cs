@@ -15,6 +15,9 @@ namespace CloneUber.Extensions
 			builder.Services.AddTransient<StartPageVM>();
 			builder.Services.AddTransient<StartPage>();
 
+            builder.Services.AddTransient<CreateAccountPageVM>();
+            builder.Services.AddTransient<CreateAccountPage>();
+
         }
 	}
 }

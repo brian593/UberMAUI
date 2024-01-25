@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CloneUber.Views.Register.CreateAccountPage"
+             Shell.NavBarIsVisible="False"
+             Title="CreateAccountPage">
+    <StackLayout Spacing="30" Padding="20">
+        <Label 
+            Text="Selecciona tu cuenta de Google"
+            FontSize="Medium"
+           TextColor="#000000" />
+
+        <Label Text="Si continuas es posible que recibas un SMS para verificar la cuenta se pueden aplicar los precios de mensajes y datos"/>
+
+        <Frame HasShadow="False" Background="#EEEEEE"  Padding="5" Margin="5">
+            
+            <StackLayout Orientation="Horizontal">
+                <Image Source="https://i.ibb.co/ry4pbhz/google.png" HeightRequest="35"/>
+                <Label Text="Continuar con Google"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="Center"
+                       FontAttributes="Bold"
+                       TextColor="#000000"/>
+
+            </StackLayout>
+
+        </Frame>
+
+    </StackLayout>
+</ContentPage>
