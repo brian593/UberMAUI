@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CloneUber.Views.Register.StartPage"
+             Shell.NavBarIsVisible="False"
+             Title="StartPage">
+    <Grid>
+
+        <StackLayout BackgroundColor="#276ef1">
+
+            <StackLayout VerticalOptions="CenterAndExpand" Spacing="50">
+
+               <Label Text="Uber"
+               TextColor="#FFFFFF"
+               HorizontalOptions="Center"
+               FontSize="40"
+               />
+
+               <Image Source="https://i.ibb.co/gPNRRbR/conductor.png"
+               HeightRequest="150"
+               />
+
+               <Label Text="Viaja con seguriad"
+               TextColor="#FFFFFF"
+               HorizontalOptions="Center"
+               FontSize="35"
+               />
+
+            </StackLayout>
+        
+
+        <Grid VerticalOptions="EndAndExpand" Margin="20">
+            <Button
+                Text="EMPEZAR"
+                BackgroundColor="#000000"
+                TextColor="#FFFFFF"
+                TextTransform="None"
+                CornerRadius="0"
+                Margin="10"
+                />
+            <Image Source="https://i.ibb.co/hdky0Bg/chevron-derecho.png" HeightRequest="30" HorizontalOptions="End" Margin="0,0,18,0"/>
+            </Grid>
+
+
+    </StackLayout>
+    </Grid>
+    
+</ContentPage>
