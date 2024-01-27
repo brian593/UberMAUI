@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CloneUber.Views.Register.CompleteRegistrationPage"
+             Shell.NavBarIsVisible="False"
+             xmlns:icon="clr-namespace:IconPacks.IconKind;assembly=IconPacks.Material"
+             xmlns:mdc="clr-namespace:Material.Components.Maui;assembly=Material.Components.Maui"
+             Title="CompleteRegistrationPage">
+    <StackLayout>
+        <Label 
+            Text="Confirma tu información"
+            TextColor="#000000" 
+            FontSize="Medium" />
+        <Grid ColumnDefinitions="*,*">
+          
+
+
+                <!--<Entry Placeholder="Ingresa tu nombre"
+                       BackgroundColor="#EEEEEE"
+                       TextColor="#000000"/>-->
+
+                   <mdc:TextField LabelText="Nombre"
+                                  BackgroundColor="White"
+                                  Style="{DynamicResource FilledTextFieldStyle}"
+                                  FontColor="#000000"
+                                  SupportingText=""
+                                  IconData="{Static icon:Material.Person}"/>
+
+        
+            
+
+                <!--<Entry Placeholder="Ingresa tu apellido"
+                       BackgroundColor="#EEEEEE"
+                       TextColor="#000000"/>-->
+                   <mdc:TextField LabelText="Apellido"
+                                  Style="{DynamicResource FilledTextFieldStyle}"
+                                  BackgroundColor="#EEEEEE"
+                                  FontColor="#000000"
+                                  SupportingText=""
+                                  Grid.Column="1"
+                                  IconData="{Static icon:Material.Person}"/>
+
+           
+           
+
+        </Grid>
+         <StackLayout Orientation="Horizontal" Spacing="5">
+                <Frame BackgroundColor="#eeeeee"
+                       VerticalOptions="Center"
+                       Margin="5"
+                       Padding="2"
+                        >
+                    <StackLayout>
+                        <mdc:IconButton BackgroundColor="#eeeeee" IconData="{Static icon:Material.ExpandMore}" Style="{DynamicResource StandardIconButtonStyle}" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#eeeeee"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"
+                       Padding="10"
+                       HasShadow="False">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                    <Label Text="+593" FontSize="Medium" VerticalOptions="Center"/>
+                    <Entry VerticalOptions="Center"
+                           FontSize="Medium"
+                           Placeholder="Número de movil"
+                           HorizontalOptions="FillAndExpand"
+                           Keyboard="Telephone"
+                           />
+                    </StackLayout>
+            </Frame>
+
+            </StackLayout>
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" Margin="20">
+            <!--<mdc:IconButton Style="{DynamicResource OutlinedButtonStyle}" IconData="{Static icon:Material.ArrowBack}" Text=""/>-->
+            <mdc:IconButton IconData="{Static icon:Material.ArrowBack}" Style="{DynamicResource FilledIconButtonStyle}" BackgroundColor="#EEEEEE" IconColor="#000000"/>
+
+            <mdc:Button IconColor="#FFFFFF"
+                        FontColor="#ffffff"
+                        BackgroundColor="#000000"
+                        Style="{DynamicResource ElevatedButtonStyle}"
+                        IconData="{Static icon:Material.ArrowForward}"
+                        
+                        Text="Siguiente"
+                        HorizontalOptions="EndAndExpand"/>
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

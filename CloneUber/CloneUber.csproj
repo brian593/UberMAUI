@@ -64,6 +64,8 @@
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+		<PackageReference Include="Material.Components.Maui" Version="0.2.1-preview" />
+		<PackageReference Include="IconPacks.Material" Version="1.0.8786.1-build" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -73,6 +75,7 @@
 	  <None Remove="ViewModels\" />
 	  <None Remove="Extensions\" />
 	  <None Remove="Views\Register\" />
+	  <None Remove="Controls\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Services\" />
@@ -81,5 +84,6 @@
 	  <Folder Include="ViewModels\" />
 	  <Folder Include="Extensions\" />
 	  <Folder Include="Views\Register\" />
+	  <Folder Include="Controls\" />
 	</ItemGroup>
 </Project>

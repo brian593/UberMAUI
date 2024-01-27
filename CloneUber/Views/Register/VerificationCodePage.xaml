@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CloneUber.Views.Register.VerificationCodePage"
+             xmlns:local="clr-namespace:CloneUber.Controls"
+             Shell.NavBarIsVisible="False"
+             xmlns:icon="clr-namespace:IconPacks.IconKind;assembly=IconPacks.Material"
+             xmlns:mdc="clr-namespace:Material.Components.Maui;assembly=Material.Components.Maui"
+             Title="VerificationCodePage"
+             >
+    <StackLayout>
+        <StackLayout Margin="20">
+            <Label Text="Ingrese el código de 4 digitos enviado a ******4322:"
+                   FontSize="Medium"
+                   TextColor="#000000"/>
+            <Grid ColumnDefinitions="*,*">
+            <local:PinEntry Length="4"/>
+            </Grid>
+            <Frame BackgroundColor="#f6f6f6"
+                   CornerRadius="30"
+                   HasShadow="False"
+                   Padding="20,8"
+                   HorizontalOptions="Start">
+                <Label Text="No he recibido ningún código(30)"/>
+
+
+            </Frame>
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" Margin="20">
+            <!--<mdc:IconButton Style="{DynamicResource OutlinedButtonStyle}" IconData="{Static icon:Material.ArrowBack}" Text=""/>-->
+            <mdc:IconButton IconData="{Static icon:Material.ArrowBack}" Style="{DynamicResource FilledIconButtonStyle}" BackgroundColor="#EEEEEE" IconColor="#000000"/>
+
+            <mdc:Button IconColor="#FFFFFF"
+                        FontColor="#ffffff"
+                        BackgroundColor="#000000"
+                        Style="{DynamicResource ElevatedButtonStyle}"
+                        IconData="{Static icon:Material.ArrowForward}"
+                        
+                        Text="Siguiente"
+                        HorizontalOptions="EndAndExpand"/>
+
+        </StackLayout>
+
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

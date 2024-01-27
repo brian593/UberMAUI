@@ -2,6 +2,7 @@
 using CloneUber.Services;
 using CloneUber.ViewModels;
 using CloneUber.Views.Register;
+using Material.Components.Maui.Extensions;
 
 namespace CloneUber.Extensions
 {
@@ -17,6 +18,15 @@ namespace CloneUber.Extensions
 
             builder.Services.AddTransient<CreateAccountPageVM>();
             builder.Services.AddTransient<CreateAccountPage>();
+
+            builder.Services.AddTransient<CompleteRegistrationPageVM>();
+            builder.Services.AddTransient<CompleteRegistrationPage>();
+
+            builder.Services.AddTransient<VerificationCodePageVM>();
+            builder.Services.AddTransient<VerificationCodePage>();
+
+            builder
+           .UseMaterialComponents();
 
         }
 	}
