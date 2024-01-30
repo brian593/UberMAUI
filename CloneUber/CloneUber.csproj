@@ -76,6 +76,7 @@
 	  <None Remove="Extensions\" />
 	  <None Remove="Views\Register\" />
 	  <None Remove="Controls\" />
+	  <None Remove="Views\Landing\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Services\" />
@@ -85,5 +86,6 @@
 	  <Folder Include="Extensions\" />
 	  <Folder Include="Views\Register\" />
 	  <Folder Include="Controls\" />
+	  <Folder Include="Views\Landing\" />
 	</ItemGroup>
 </Project>

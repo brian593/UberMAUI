@@ -8,7 +8,6 @@
              xmlns:mdc="clr-namespace:Material.Components.Maui;assembly=Material.Components.Maui"
              Title="VerificationCodePage"
              >
-    <StackLayout>
         <StackLayout Margin="20">
             <Label Text="Ingrese el código de 4 digitos enviado a ******4322:"
                    FontSize="Medium"
@@ -43,5 +42,4 @@
 
 
         </StackLayout>
-    </StackLayout>
 </ContentPage>
