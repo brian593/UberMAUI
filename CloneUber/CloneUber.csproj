@@ -69,6 +69,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\account.svg" />
+	  <None Remove="Resources\Images\activity.svg" />
+	  <None Remove="Resources\Images\home.svg" />
+	  <None Remove="Resources\Images\services.svg" />
 	  <None Remove="Services\" />
 	  <None Remove="Views\" />
 	  <None Remove="Models\" />
@@ -80,12 +84,23 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Services\" />
-	  <Folder Include="Views\" />
 	  <Folder Include="Models\" />
-	  <Folder Include="ViewModels\" />
 	  <Folder Include="Extensions\" />
 	  <Folder Include="Views\Register\" />
 	  <Folder Include="Controls\" />
-	  <Folder Include="Views\Landing\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Update="Views\Landing\AccountPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Landing\ActivityPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Landing\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Landing\ServicesPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 </Project>

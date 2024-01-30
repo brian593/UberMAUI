@@ -4,14 +4,36 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:CloneUber"
-    xmlns:views="clr-namespace:CloneUber.Views.Register"
+    xmlns:views="clr-namespace:CloneUber.Views.Landing"
+    xmlns:register="clr-namespace:CloneUber.Views.Register"
     Shell.FlyoutBehavior="Disabled"
     Title="CloneUber">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate views:VerificationCodePage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Inicio"
+            ContentTemplate="{DataTemplate views:HomePage}"
+            Icon="home.svg"
+            />
+        <ShellContent
+        Title="Servicios"
+        ContentTemplate="{DataTemplate views:ServicesPage}"
+            Icon="services.svg"
+        />
+        <ShellContent
+         Title="Actividad"
+         ContentTemplate="{DataTemplate views:ActivityPage}"
+            Icon="activity.svg"
+         /> 
+        <ShellContent
+         Title="Cuenta"
+         ContentTemplate="{DataTemplate views:AccountPage}"
+            Icon="account.svg"
+         />
+
+
+
+    </TabBar>
 
 </Shell>
 
