@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CloneUber.Views.Landing.HomePage"
@@ -6,7 +6,8 @@
             xmlns:icon="clr-namespace:IconPacks.IconKind;assembly=IconPacks.Material"
             xmlns:mdc="clr-namespace:Material.Components.Maui;assembly=Material.Components.Maui"
              Title="HomePage">
-    <>
+
+    <StackLayout>
         <Label 
             Text="Uber"
             VerticalOptions="Start" 
@@ -14,10 +15,21 @@
             FontSize="35"
             FontAttributes="Bold"
             />
-            <Frame BackgroundColor="#eeeeee">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
-                <Label Text="jjfjfjfjfjfjf" TextColor="Black" />
 
+            <Frame BackgroundColor="#eeeeee"  Margin="5" CornerRadius="30">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
+                <mdc:IconButton IconData="{Static icon:Material.Search}" Style="{DynamicResource StandardIconButtonStyle}" />
+                <Label Text="¿A dónde vas?" FontSize="Medium" FontAttributes="Bold"></Label>
+                <Frame BackgroundColor="#c7c7c7c7"   CornerRadius="30">
+
+                    <StackLayout Orientation="Horizontal">
+                        <mdc:IconButton IconData="{Static icon:Material.Schedule}" Style="{DynamicResource StandardIconButtonStyle}" />
+                        <Label Text="Ahora" FontSize="Medium" FontAttributes="Bold"></Label>
+                        <mdc:IconButton IconData="{Static icon:Material.ArrowDropDown}" Style="{DynamicResource StandardIconButtonStyle}" />
+
+
+                    </StackLayout>
+                </Frame>
             </StackLayout>
             
         </Frame>
