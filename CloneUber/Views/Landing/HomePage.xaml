@@ -16,23 +16,48 @@
             FontAttributes="Bold"
             />
 
-            <Frame BackgroundColor="#eeeeee"  Margin="5" CornerRadius="30">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
-                <mdc:IconButton IconData="{Static icon:Material.Search}" Style="{DynamicResource StandardIconButtonStyle}" />
-                <Label Text="¿A dónde vas?" FontSize="Medium" FontAttributes="Bold"></Label>
-                <Frame BackgroundColor="#c7c7c7c7"   CornerRadius="30">
 
-                    <StackLayout Orientation="Horizontal">
-                        <mdc:IconButton IconData="{Static icon:Material.Schedule}" Style="{DynamicResource StandardIconButtonStyle}" />
-                        <Label Text="Ahora" FontSize="Medium" FontAttributes="Bold"></Label>
-                        <mdc:IconButton IconData="{Static icon:Material.ArrowDropDown}" Style="{DynamicResource StandardIconButtonStyle}" />
-
-
-                    </StackLayout>
-                </Frame>
+        <Frame BackgroundColor="#eeeeee" CornerRadius="40" VerticalOptions="Start" Padding="8" Margin="10">
+    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Fill">
+        <mdc:IconButton IconData="{Static icon:Material.Search}" Style="{DynamicResource StandardIconButtonStyle}" VerticalOptions="Center" />
+        <Label Text="¿A dónde vas?" FontSize="Medium" FontAttributes="Bold" VerticalOptions="Center"/>
+        <Frame BackgroundColor="#ffffff" CornerRadius="40" VerticalOptions="Center" Padding="5" HorizontalOptions="EndAndExpand">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <mdc:IconButton IconData="{Static icon:Material.Schedule}" Style="{DynamicResource StandardIconButtonStyle}" VerticalOptions="Center" />
+                <Label Text="Ahora" FontSize="Medium" FontAttributes="Bold" VerticalOptions="Center"/>
+                <mdc:IconButton IconData="{Static icon:Material.ArrowDropDown}" Style="{DynamicResource StandardIconButtonStyle}" VerticalOptions="Center"/>
             </StackLayout>
-            
         </Frame>
+    </StackLayout>
+</Frame>
+
+        <Frame Margin="10" Padding="0">
+            <Grid ColumnDefinitions="7*,3*">
+
+                <StackLayout Padding="15" BackgroundColor="#F29979">
+                    <Label
+                        Text="¿Necesitas ir a algún lugar?"
+                        VerticalOptions="StartAndExpand"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        />
+                         <Label
+                        Text="Viajar con la app →"
+                             FontAttributes="Bold"
+                             VerticalOptions="EndAndExpand"/>
+                   
+                   
+                </StackLayout>
+                <Image Grid.Column="1"
+                       Source="https://i.ibb.co/xXt4FR1/earner-illustra-1.jpg"
+                       MaximumHeightRequest="150"
+                       Aspect="AspectFill"
+                      />
+
+            </Grid>
+
+        </Frame>
+
        
     </StackLayout>
 </ContentPage>

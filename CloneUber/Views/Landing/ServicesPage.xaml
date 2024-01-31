@@ -3,11 +3,42 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CloneUber.Views.Landing.ServicesPage"
+             Shell.NavBarIsVisible="False"
+             xmlns:icon="clr-namespace:IconPacks.IconKind;assembly=IconPacks.Material"
+             xmlns:mdc="clr-namespace:Material.Components.Maui;assembly=Material.Components.Maui"
              Title="ServicesPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <StackLayout Margin="10">
+          <Label 
+            Text="Servcios"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" 
+            FontSize="35"
+            FontAttributes="Bold"
+            />
+         <Label 
+            Text="Viaja a cualquier lugar y obtén de todo"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" 
+            FontSize="Medium"
+            FontAttributes="Bold"
+             Margin="0,20"
+            />
+        <Frame Background="#c7c7c7" HorizontalOptions="Center" Padding="0">
+            <StackLayout Orientation="Horizontal" Spacing="20" >
+                <Label Text="Viaje"
+                       FontAttributes="Bold"
+                       VerticalOptions="End"
+                       Margin="10"
+                       HorizontalOptions="Start"/>
+                <Image Source="https://i.ibb.co/KmTm4kq/comfort-removebg-preview.png"
+                       Aspect="AspectFit"
+                       MaximumWidthRequest="150"
+                       HorizontalOptions="End"
+                       VerticalOptions="Start"
+                       />
+
+            </StackLayout>
+
+        </Frame>
+    </StackLayout>
 </ContentPage>
